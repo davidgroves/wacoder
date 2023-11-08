@@ -1,0 +1,154 @@
+{
+  d = {
+    actions = {
+      finish = {},
+      init = {},
+      start = {}
+    },
+    anchorFrameType = "SCREEN",
+    anchorPoint = "CENTER",
+    animation = {
+      finish = {
+        duration_type = "seconds",
+        easeStrength = 3,
+        easeType = "none",
+        type = "none"
+      },
+      main = {
+        duration_type = "seconds",
+        easeStrength = 3,
+        easeType = "none",
+        preset = "alphaPulse",
+        type = "preset"
+      },
+      start = {
+        duration_type = "seconds",
+        easeStrength = 3,
+        easeType = "none",
+        type = "none"
+      }
+    },
+    authorOptions = {},
+    automaticWidth = "Auto",
+    color = { 1, 0.094117656350136, 0, 1 },
+    conditions = {},
+    config = {},
+    customTextUpdate = "event",
+    displayText = "NO PET\n\n",
+    fixedWidth = 200,
+    font = "PT Sans Narrow",
+    fontSize = 60,
+    frameStrata = 1,
+    height = 107.99999972645,
+    id = "No pet",
+    information = {
+      forceEvents = true,
+      ignoreOptionsEventErrors = true
+    },
+    internalVersion = 68,
+    justify = "LEFT",
+    load = {
+      affixes = {
+        multi = {}
+      },
+      class = {
+        multi = {
+          DEATHKNIGHT = true,
+          HUNTER = true,
+          MAGE = true,
+          WARLOCK = true
+        }
+      },
+      class_and_spec = {
+        multi = {}
+      },
+      difficulty = {
+        multi = {}
+      },
+      faction = {
+        multi = {}
+      },
+      ingroup = {
+        multi = {}
+      },
+      pvptalent = {
+        multi = {}
+      },
+      race = {
+        multi = {}
+      },
+      role = {
+        multi = {}
+      },
+      size = {
+        multi = {}
+      },
+      spec = {
+        multi = {}
+      },
+      talent = {
+        multi = {}
+      },
+      talent2 = {
+        multi = {}
+      },
+      talent3 = {
+        multi = {}
+      },
+      use_alive = false,
+      use_class = false,
+      use_never = false,
+      use_spellknown = false,
+      use_vehicle = false,
+      use_vehicleUi = false,
+      zoneIds = ""
+    },
+    outline = "OUTLINE",
+    regionType = "text",
+    selfPoint = "BOTTOM",
+    semver = "1.0.2",
+    shadowColor = { 0, 0, 0, 1 },
+    shadowXOffset = 1,
+    shadowYOffset = -1,
+    source = "import",
+    subRegions = { {
+        type = "subbackground"
+      } },
+    tocversion = 30403,
+    triggers = { {
+        trigger = {
+          debuffType = "HELPFUL",
+          duration = "1",
+          event = "Conditions",
+          genericShowOn = "showOnActive",
+          names = {},
+          spellIds = {},
+          subeventPrefix = "SPELL",
+          subeventSuffix = "_CAST_START",
+          type = "unit",
+          unevent = "auto",
+          unit = "player",
+          use_HasPet = false,
+          use_alive = true,
+          use_behavior = true,
+          use_resting = false,
+          use_unit = true,
+          use_vehicle = false
+        },
+        untrigger = {}
+      },
+      activeTriggerMode = 1
+    },
+    uid = "PRmPYespVPl",
+    url = "https://wago.io/lQ1uzDlV2/3",
+    version = 3,
+    wagoID = "lQ1uzDlV2",
+    width = 105.40000660621,
+    wordWrap = "WordWrap",
+    xOffset = -0.00014005706634634,
+    yOffset = 189.8119891174
+  },
+  m = "d",
+  s = "5.8.3",
+  v = 1421
+}
