@@ -15,7 +15,7 @@ I use this to update weakaura packs with my customisations in an automated way t
 
 1. In the directory you extracted it, create a file with the weakauras contents, for example `my_weakaura.txt`.
 2. At a command line, run `lua --decode <path_to_wa_string>`, to print the weakaura in a human readable format to standard out.
-3. At a command line, run `lua --encode <path_to_human_readable_format>`, to print the weakaura string to standard out.
+3. At a command line, run `lua --encode <path_to_human_readable_file>`, to print the weakaura string to standard out.
 
 ## Example
 
