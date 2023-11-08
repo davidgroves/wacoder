@@ -19,7 +19,7 @@ local function decode(filename)
   local content_decompressed = LibDeflate:DecompressDeflate(content_decoded)
   local content_deserialized = LibSerialize:DeserializeValue(content_decompressed)
   local string_repr = Inspect.inspect(content_deserialized)
-  print(string_repr)
+  return string_repr
 end
 
 local function encode(filename)
@@ -37,7 +37,7 @@ local function encode(filename)
   local content_compressed = LibDeflate:CompressDeflate(content_serialised)
   local content_encoded = LibDeflate:EncodeForPrint(content_compressed)
   local content_with_header = "!WA:2!" .. content_encoded
-  print(content_with_header)
+  return content_with_header
 end
 
 
@@ -46,9 +46,11 @@ for i,_ in ipairs(args) do
     print("Usage: ./coder.lua --decode | --encode <filename>")
   end
   if args[i] == "--decode" then
-    decode(args[i+1])
+    local decoded = decode(args[i+1])
+    print(decoded)
   end
   if args[i] == "--encode" then
-    encode(args[i+1])
+    local encoded = encode(args[i+1])
+    print(encoded)
   end
 end
